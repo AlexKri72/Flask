@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+<tr>
+    <th>Name</th>
+    <th>Lastname</th>
+    <th>Age</th>
+    <th>Averadge score</th>
+</tr>
+{% for item in context%}
+
+<tr>
+    <td>{{item.Name}}</td>
+    <td>{{item.Lastname}}</td>
+    <td>{{item.Age}}</td>
+    <td>{{item.Averadge}}</td>
+</tr>
+
+{%endfor%}
+</table>
+</body>
+</html>
