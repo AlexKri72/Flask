@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Квадрат
+{% endblock %}
+
+{% block context %}
+<form method="post" enctype="multipart/form-data">
+    <div>
+        <label for="num" >
+            Число:
+            <input type="number" id="num" name="num">
+        </label>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}

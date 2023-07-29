@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Возраст
+{% endblock %}
+
+{% block context %}
+<form method="post" enctype="multipart/form-data">
+    <div>
+        <label for="name" >
+            Имя пользователя
+            <input type="text" placeholder="Please enter your name" id="name" name="name">
+        </label>
+        <label for="age">
+            Возраст пользователя
+            <input type="age" placeholder="Please enter your age" id="age" name="age">
+        </label>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}

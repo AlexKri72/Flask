@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Логин
+{% endblock %}
+
+{% block context %}
+<form method="post" enctype="multipart/form-data">
+    <div>
+        <label for="log" >
+            Логин
+            <input type="text" placeholder="Please enter your login" id="login" name="login"></input>
+        </label>
+        <label for="pass">
+            Пароль
+            <input type="password" placeholder="Please enter your password" id="password" name="password"></input>
+        </label>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}

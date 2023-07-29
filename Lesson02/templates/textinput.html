@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Текст
+{% endblock %}
+
+{% block context %}
+<form method="post" enctype="multipart/form-data">
+    <div>
+        <label for="text" >
+            Введите текст:
+            <input type="text" name="text" id="text">
+        </label>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}

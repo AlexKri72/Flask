@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Арифметика
+{% endblock %}
+
+{% block context %}
+<form method="post" enctype="multipart/form-data">
+    <div>
+        <label for="num1" >
+            Число 1:
+            <input type="number"  id="num1" name="num1">
+        </label>
+        <label for="num2">
+            Число 2:
+            <input type="number" id="num2" name="num2">
+        </label>
+        <label for="operation"><br />
+            <input type="checkbox" name="operation" value="+" /> Сложить<br />
+            <input type="checkbox" name="operation" value="-" /> Вычесть<br />
+            <input type="checkbox" name="operation" value="*" /> Умножить<br />
+            <input type="checkbox" name="operation"  value="/" /> Разделить<br />
+        </label>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
