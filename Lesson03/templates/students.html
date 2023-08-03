@@ -1,0 +1,11 @@
+{% extends 'base.html'   %}
+
+{%  block title %}
+students page
+{% endblock %}
+
+{% block content%}
+{% for i in student %}
+<p>{{student.name}} {{}student.lastname}</p>
+{% endfor %}
+{% endblock %}
